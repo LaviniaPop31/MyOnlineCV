@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    
+} */
+
+/* Header */
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-buttons div {
+    margin: 1%;
+}
+
+/* Main */
+
+/* section contact */
+#contactContent {
+    position: absolute;
+    margin: 3% auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: grey;
+    width: 50%;
+    height: 65%;
+}
+
+.contact-content h3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contact-content p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contact-content input {
+    display: flex;
+    left: 0;
+    right: 0;
+    margin: 2% auto;
+    height: 10%;
+    width: 55%;
+}
+
+#messageInput {
+    height: 30%;
+    /* vertical-align: text-top;
+    transform-origin: 0% 0%; */
+    
+}
+
+[placeholder="Message"] {
+    vertical-align: top;
+    transform-origin: 0% 0%;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right:0;
+}
+
+.footer-icons div {
+    font-size: 20px;
+    margin: 0.5%;
+}
