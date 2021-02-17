@@ -18,14 +18,14 @@
 
 /* Main */
 
-/* section contact */
-#contactContent {
+/* Section contact */
+.contact-content {
     position: absolute;
     margin: 3% auto;
     left: 0;
     right: 0;
     text-align: center;
-    background-color: grey;
+    background-color: aquamarine;
     width: 50%;
     height: 65%;
 }
@@ -35,31 +35,66 @@
     margin-bottom: 1%;
 }
 
-.contact-content p {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
+/* .contact-content p {
+    text-align: left;
+    padding-left: 23%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+} */
 
 .contact-content input {
-    display: flex;
-    left: 0;
-    right: 0;
-    margin: 2% auto;
-    height: 10%;
-    width: 55%;
+    padding: 10px 0;
+    margin-bottom: 30px;
 }
 
-#messageInput {
-    height: 30%;
-    /* vertical-align: text-top;
-    transform-origin: 0% 0%; */
-    
+.contact-content textarea {
+    height: 15%;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-[placeholder="Message"] {
-    vertical-align: top;
-    transform-origin: 0% 0%;
+.contact-content input,
+ .contact-content textarea {
+    width: 60%;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
 }
+
+.contact-content button {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+} 
+
+.contact-content form div {
+    position: relative
+}
+
+.contact-content form div label {
+    position: absolute;
+    top: 10px;
+    left: 22%;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.contact-content input:focus ~ label,
+ .contact-content textarea:focus ~ label,
+ .contact-content input:valid ~ label,
+ .contact-content textarea:valid ~ label {
+     top: -20px;
+ }
+
+ .contact-content input:focus,
+ .contact-content textarea:focus,
+ .contact-content input:valid,
+ .contact-content textarea:valid {
+     border-bottom: 2px solid black;
+ }
+
 
 /* Footer */
 footer {
