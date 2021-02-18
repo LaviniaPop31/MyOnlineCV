@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* body {
@@ -7,26 +8,35 @@
 } */
 
 /* Header */
+.header-logo {
+    display: inline;
+}
+.header-logo img{
+    height: 35px;
+    width: 120px;
+}
+
 .header-buttons {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
+    float: right;
 }
 
 .header-buttons div {
-    margin: 1%;
+    margin: 4%;
 }
 
 /* Main */
 
-/* section contact */
-#contactContent {
+/* Section contact */
+.contact-content {
     position: absolute;
     margin: 3% auto;
     left: 0;
     right: 0;
     text-align: center;
-    background-color: grey;
-    width: 50%;
+    border:2px solid rgb(8,74,131);
+    width: 40%;
     height: 65%;
 }
 
@@ -35,31 +45,72 @@
     margin-bottom: 1%;
 }
 
-.contact-content p {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
+
+/* .contact-content p {
+    text-align: left;
+    padding-left: 23%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+} */
 
 .contact-content input {
-    display: flex;
-    left: 0;
-    right: 0;
-    margin: 2% auto;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contact-content textarea {
+    /* height: 15%; */
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.contact-content input,
+ .contact-content textarea {
+    width: 60%;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.contact-content button {
+    width: 20%;
     height: 10%;
-    width: 55%;
+    cursor: pointer;
+    background-color: rgb(8,74,131);
+    color: white;
+    border: none;
+} 
+
+.contact-content form div {
+    position: relative
 }
 
-#messageInput {
-    height: 30%;
-    /* vertical-align: text-top;
-    transform-origin: 0% 0%; */
-    
+.contact-content form div label {
+    position: absolute;
+    top: 10px;
+    left: 22%;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
 }
 
-[placeholder="Message"] {
-    vertical-align: top;
-    transform-origin: 0% 0%;
-}
+.contact-content input:focus ~ label,
+ .contact-content textarea:focus ~ label,
+ .contact-content input:valid ~ label,
+ .contact-content textarea:valid ~ label {
+     top: -20px;
+     color: rgb(83,157,219);
+ }
+
+ .contact-content input:focus,
+ .contact-content textarea:focus,
+ .contact-content input:valid,
+ .contact-content textarea:valid {
+     border-bottom: 2px solid rgb(83,157,219);
+     
+ }
+
 
 /* Footer */
 footer {
@@ -74,4 +125,8 @@ footer {
 .footer-icons div {
     font-size: 20px;
     margin: 0.5%;
+}
+
+.footer-icons div a {
+    color: black;
 }

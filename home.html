@@ -7,16 +7,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>MyOnlineCV</title>
 </head>
 <body>
     <!-- Header -->
-    <header class="header-buttons">
-        <div id="homeButton">Home</div>
-        <div id="resumeButton">Resume</div>
-        <div id="portofolioButton">Portofolio</div>
-        <div id="interestsButton">Interests</div>
-        <div id="contactButton">Contact</div>
+    <header >
+        <div class="header-logo">
+            <img src="./mylogo.png">
+        </div>
+        <div class="header-buttons">
+            <div id="homeButton">Home</div>
+            <div id="resumeButton">Resume</div>
+            <div id="portofolioButton">Portofolio</div>
+            <div id="interestsButton">Interests</div>
+            <div id="contactButton">Contact</div>
+        </div>
     </header>
     <main>
         <section id="homeContent"></section>
@@ -26,13 +33,26 @@
         <section id="contactContent" class="contact-content">
             <h3>Contact me</h3>
             <p>Feel free to contact me</p>
-            <!-- <div class="text-inputs"> -->
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Subject">
-                <input id="messageInput" type="text" placeholder="Message">
-            <!-- </div> -->
-            <button type="button">Send</button>
+            <form>
+                <div>
+                    <input type="text" required="">
+                    <label>Name</label>
+                </div>
+                <div>
+                    <input type="email" required="">
+                    <label>Email</label>
+                </div>
+                <div>
+                    <input type="text" required="">
+                    <label>Subject</label>
+                </div>
+                <div>
+                    <textarea required=""></textarea>
+                    <label>Message</label>
+                </div>
+                <button type="button">Send</button>
+            </form>
+            
         </section>
     </main>
     <!-- Footer -->
