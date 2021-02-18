@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* body {
@@ -7,13 +8,22 @@
 } */
 
 /* Header */
+.header-logo {
+    display: inline;
+}
+.header-logo img{
+    height: 35px;
+    width: 120px;
+}
+
 .header-buttons {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
+    float: right;
 }
 
 .header-buttons div {
-    margin: 1%;
+    margin: 4%;
 }
 
 /* Main */
@@ -25,8 +35,8 @@
     left: 0;
     right: 0;
     text-align: center;
-    background-color: aquamarine;
-    width: 50%;
+    border:2px solid rgb(8,74,131);
+    width: 40%;
     height: 65%;
 }
 
@@ -34,6 +44,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
 }
+
 
 /* .contact-content p {
     text-align: left;
@@ -44,11 +55,11 @@
 
 .contact-content input {
     padding: 10px 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .contact-content textarea {
-    height: 15%;
+    /* height: 15%; */
     padding: 10px 0;
     margin-bottom: 20px;
 }
@@ -63,9 +74,12 @@
 }
 
 .contact-content button {
-    width: 70px;
-    height: 30px;
+    width: 20%;
+    height: 10%;
     cursor: pointer;
+    background-color: rgb(8,74,131);
+    color: white;
+    border: none;
 } 
 
 .contact-content form div {
@@ -86,13 +100,15 @@
  .contact-content input:valid ~ label,
  .contact-content textarea:valid ~ label {
      top: -20px;
+     color: rgb(83,157,219);
  }
 
  .contact-content input:focus,
  .contact-content textarea:focus,
  .contact-content input:valid,
  .contact-content textarea:valid {
-     border-bottom: 2px solid black;
+     border-bottom: 2px solid rgb(83,157,219);
+     
  }
 
 
@@ -109,4 +125,8 @@ footer {
 .footer-icons div {
     font-size: 20px;
     margin: 0.5%;
+}
+
+.footer-icons div a {
+    color: black;
 }
