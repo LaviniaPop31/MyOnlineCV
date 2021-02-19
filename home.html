@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
     <title>MyOnlineCV</title>
 </head>
+
 <body>
     <!-- Header -->
-    <header >
+    <header>
         <div class="header-logo">
             <img src="./mylogo.png">
         </div>
@@ -27,9 +32,65 @@
     </header>
     <main>
         <section id="homeContent"></section>
-        <section id="resumeContent"></section>
+
+        <!-- Section resume -->
+        <section id="resumeContent">
+            <div class="myself-information">
+                <h2>Lavinia Pop</h2>
+                <hr>
+                <p>Telefon: 0741918651</p>
+                <p>Email: lavinia.pop31@gmail.com</p>
+            </div>
+            <div class="resume-information">
+                <div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#professionalTraining" aria-expanded="false" aria-controls="collapseExample">
+                        Professional Trainings
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#previousWork" aria-expanded="false">
+                        Previous Work History
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false">
+                        Education
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="false">
+                        Skills
+                    </button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#languages" aria-expanded="false">
+                        Languages
+                    </button>
+                </div>
+                <div class="collapse" id="professionalTraining">
+                    <div class="card card-body">
+                        Scoala informal de IT
+                    </div>
+                </div>
+                <div class="collapse" id="previousWork">
+                    <div class="card card-body">
+                        Viafarm
+                    </div>
+                </div>
+                <div class="collapse" id="education">
+                    <div class="card card-body">
+                        1
+                    </div>
+                </div>
+                <div class="collapse" id="skills">
+                    <div class="card card-body">
+                        2
+                    </div>
+                </div>
+                <div class="collapse" id="languages">
+                    <div class="card card-body">
+                        3
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="portofolioContent"></section>
         <section id="interestsContent"></section>
+
+        <!-- Section contact -->
         <section id="contactContent" class="contact-content">
             <h3>Contact me</h3>
             <p>Feel free to contact me</p>
@@ -52,7 +113,7 @@
                 </div>
                 <button type="button">Send</button>
             </form>
-            
+
         </section>
     </main>
     <!-- Footer -->
@@ -60,19 +121,24 @@
         <div id="linkedinIcon">
             <a href="https://www.linkedin.com/in/laviniapop/">
                 <i class="fa fa-linkedin"></i></a>
-            
+
         </div>
         <div id="facebookIcon">
             <a href="https://www.facebook.com/pop.lavinia.988/">
                 <i class="fa fa-facebook-square"></i>
             </a>
-            
+
         </div>
         <div id="instagramIcon">
             <a href="https://www.instagram.com/lavinia.amalia.pop/">
                 <i class="fa fa-instagram"></i></a>
-            
+
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="resume.js"></script>
 </body>
+
 </html>
