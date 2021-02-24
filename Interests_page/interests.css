@@ -1,0 +1,56 @@
+.interests-content {
+    position: absolute;
+    height: 60%;
+    width: 70%;
+    top: 15%;
+    left: 15%;
+    border: 2px solid black;
+    display: flex;
+    
+}
+
+.yoga img, .skiing img {
+    width: 40px;
+    height: 40px;
+}
+
+.yoga h5, .skiing h5 {
+    position: relative;
+    vertical-align: bottom;
+}
+
+.traveling i {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.dancing img, .reading img{
+    width: 200px;
+    height: 230px;
+}
+
+.dancing, .reading {
+    margin: 1% 16%;
+}
+
+.dancing h4, .reading h4 {
+    margin-left: 30%;
+}
+
+.traveling, .yoga, .skiing {
+    position: absolute;
+    bottom: 0%;   
+}
+
+.traveling {
+    left: 30%;
+}
+
+.yoga {
+    left: 50%;
+}
+
+.skiing {
+    left: 70%;
+}
