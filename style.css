@@ -3,10 +3,6 @@
     font-family: 'Nunito', sans-serif;
 }
 
-/* body {
-    
-} */
-
 /* Header */
 .header-logo {
     display: inline;
@@ -20,96 +16,12 @@
     display: inline-flex;
     justify-content: flex-end;
     float: right;
+    cursor: pointer;
 }
 
 .header-buttons div {
     margin: 4%;
 }
-
-/* Main */
-
-/* Section contact */
-.contact-content {
-    position: absolute;
-    margin: 3% auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    border:2px solid rgb(8,74,131);
-    width: 40%;
-    height: 65%;
-}
-
-.contact-content h3 {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-
-/* .contact-content p {
-    text-align: left;
-    padding-left: 23%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-} */
-
-.contact-content input {
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-
-.contact-content textarea {
-    /* height: 15%; */
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-
-.contact-content input,
- .contact-content textarea {
-    width: 60%;
-    box-shadow: none;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid grey;
-}
-
-.contact-content button {
-    width: 20%;
-    height: 10%;
-    cursor: pointer;
-    background-color: rgb(8,74,131);
-    color: white;
-    border: none;
-} 
-
-.contact-content form div {
-    position: relative
-}
-
-.contact-content form div label {
-    position: absolute;
-    top: 10px;
-    left: 22%;
-    color: #999;
-    transition: .5s;
-    pointer-events: none;
-}
-
-.contact-content input:focus ~ label,
- .contact-content textarea:focus ~ label,
- .contact-content input:valid ~ label,
- .contact-content textarea:valid ~ label {
-     top: -20px;
-     color: rgb(83,157,219);
- }
-
- .contact-content input:focus,
- .contact-content textarea:focus,
- .contact-content input:valid,
- .contact-content textarea:valid {
-     border-bottom: 2px solid rgb(83,157,219);
-     
- }
 
 
 /* Footer */
