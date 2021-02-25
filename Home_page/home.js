@@ -21,3 +21,11 @@ function displayContactPage() {
         window.location.href = '/Contact_page/contact.html'
     })
 }
+
+displayInterestsPage()
+function displayInterestsPage() {
+    let interestsButton = document.getElementById('interestsButton');
+    interestsButton.addEventListener('click', () => {
+        window.location.href = '/Interests_page/interests.html'
+    })
+}
