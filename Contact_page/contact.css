@@ -16,7 +16,9 @@
     margin-bottom: 1%;
 }
 
-
+#showMessage {
+    color: red;
+}
 /* .contact-content p {
     text-align: left;
     padding-left: 23%;
