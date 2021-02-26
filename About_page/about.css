@@ -1,0 +1,20 @@
+#homeContent {
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    border: 2px solid black;
+    top:15%;
+    left:18%;
+    font-size: 22px;
+}
+
+#homeContent img {
+    width: 285px;
+    height: 325px;
+    float: right;
+}
+
+.about-me h2, .about-me p:nth-child(2) {
+    display: inline;
+}
+
