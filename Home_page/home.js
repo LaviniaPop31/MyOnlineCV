@@ -1,8 +1,42 @@
+transitionEffect()
+function transitionEffect() {
+    window.onload = () => {
+        let transitionElement = document.querySelector('.transition');
+        let button = document.getElementById('rightArrow')
+
+        setTimeout(() => {
+            transitionElement.classList.remove('is-active')
+        }, 500);
+
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+    
+            // let ourTarget = e.target.href
+            // console.log(ourTarget)
+
+            transitionElement.classList.add('is-active');
+
+            setTimeout(() => {
+                window.location.href ='/About_page/about.html'
+            }, 500)
+        })
+
+    }
+}
+
 displayHomePage()
 function displayHomePage() {
     let homeButton = document.getElementById('homeButton');
     homeButton.addEventListener('click', () => {
         window.location.href = '/Home_page/home.html'
+    })
+}
+
+displayAboutPage()
+function displayAboutPage() {
+    let aboutButton = document.getElementById('aboutButton');
+    aboutButton.addEventListener('click', () => {
+        window.location.href = '/About_page/about.html'
     })
 }
 
@@ -16,7 +50,7 @@ function displayResumePage() {
 
 displayContactPage()
 function displayContactPage() {
-    let contactButton = document.getElementById('contactButton'); 
+    let contactButton = document.getElementById('contactButton');
     contactButton.addEventListener('click', () => {
         window.location.href = '/Contact_page/contact.html'
     })
@@ -29,3 +63,12 @@ function displayInterestsPage() {
         window.location.href = '/Interests_page/interests.html'
     })
 }
+
+displayPortofolioPage()
+function displayPortofolioPage() {
+    let portofolioButton = document.getElementById('portofolioButton');
+    portofolioButton.addEventListener('click', () => {
+        window.location.href = '/Portofolio_page/portofolio.html'
+    })
+}
+

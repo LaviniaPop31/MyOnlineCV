@@ -3,7 +3,18 @@
     font-family: 'Nunito', sans-serif;
 }
 
+body {
+    background-color: rgb(236, 242, 245);
+    height: 100%;
+    width: 100%;
+}
+
 /* Header */
+header {
+    background-color: rgb(109, 116, 121);
+    height: 50px;
+}
+
 .header-logo {
     display: inline;
 }

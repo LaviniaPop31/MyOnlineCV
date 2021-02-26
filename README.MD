@@ -1,1 +1,1 @@
-http://LaviniaPop31.github.io/MyOnlineCV/home.html
+http://LaviniaPop31.github.io/MyOnlineCV/Home_page/home.html
