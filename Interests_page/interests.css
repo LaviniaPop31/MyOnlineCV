@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .interests-content {
     position: absolute;
     height: 75%;
