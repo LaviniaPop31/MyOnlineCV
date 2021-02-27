@@ -38,10 +38,9 @@ function sendEmail() {
         console.log(response)
         if (response.status === 404) {
             displayMessage.innerHTML = "Error! Your message hasn't been sent!"
-        } else if (response.status === 200) {
-        }
-        return response.json()
-    }).catch(error => {
+        } 
+        
+    }).catch(() => {
         displayMessage.innerHTML = "Error! Your message hasn't been sent!"
     })
 }
