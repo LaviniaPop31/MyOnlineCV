@@ -7,3 +7,16 @@
     right: 0;
     margin: 5% auto;
 }
+
+#allProjects {
+    width: 60%;
+}
+
+#workingImg {
+    position: absolute;
+    width: 370px;
+    height: 350px;
+    right: 0%;
+    top: 0%;
+    opacity: 0.7;
+}
