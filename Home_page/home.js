@@ -15,7 +15,7 @@ function transitionEffect() {
             transitionElement.classList.add('is-active');
 
             setTimeout(() => {
-                window.location.href ='/About_page/about.html'
+                window.location.href ='./About_page/about.html'
             }, 500)
         })
 
