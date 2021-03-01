@@ -1,19 +1,13 @@
-a {
-    text-decoration: none;
-    color: black;
-}
 
 /* Section contact */
 .contact-content {
-    position: absolute;
     margin: 3% auto;
     left: 0;
     right: 0;
     text-align: center;
     border:2px solid rgb(8,74,131);
-    width: 40%;
-    height: 65%;
     background-color: white;
+    padding-bottom: 1%;
 }
 
 .contact-content h3 {
@@ -24,12 +18,6 @@ a {
 #showMessage {
     color: red;
 }
-/* .contact-content p {
-    text-align: left;
-    padding-left: 23%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-} */
 
 .contact-content input {
     padding: 10px 0;
@@ -37,7 +25,6 @@ a {
 }
 
 .contact-content textarea {
-    /* height: 15%; */
     padding: 10px 0;
     margin-bottom: 20px;
 }
@@ -88,3 +75,50 @@ a {
      border-bottom: 2px solid rgb(83,157,219);
      
  }
+
+@media only screen and (min-width: 900px) {
+    .contact-content {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    .contact-content {
+        width: 60%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .contact-content {
+        width: 90%;
+        margin-top: 15%;
+    }
+
+    .contact-content input {
+        padding: 7px 0;
+        margin-bottom: 12px;
+    }
+    
+    .contact-content textarea {
+        padding:7px 0;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1150px) and (orientation: portrait) {
+    .contact-content {
+        width: 60%;
+        margin-top: 30%;
+    }
+
+    .contact-content input {
+        padding: 20px 0;
+        margin-bottom: 30px;
+    }
+    
+    .contact-content textarea {
+        padding: 20px 0;
+        margin-bottom: 30px;
+    }
+}
