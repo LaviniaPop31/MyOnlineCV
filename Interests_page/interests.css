@@ -1,11 +1,5 @@
-a {
-    text-decoration: none;
-    color: black;
-}
-
 .interests-content {
-    position: absolute;
-    height: 75%;
+    height: 100%;
     width: 70%;
     left:0;
     right: 0;
@@ -13,10 +7,6 @@ a {
     border: 2px solid black;
 }
 
-.yoga img, .skiing img {
-    width: 40px;
-    height: 40px;
-}
 
 .yoga h5, .skiing h5 {
     position: relative;
@@ -25,7 +15,6 @@ a {
 
 .traveling i {
     display: flex;
-    font-size: 40px;
     justify-content: center;
 }
 
@@ -33,16 +22,6 @@ a {
     display: flex;
     justify-content: space-around;
 }
-.dancing, .reading {
-    width: 200px;
-}
-
-.dancing img, .reading img{
-    width: 200px;
-    height: 240px;
-}
-
-
 
 .dancing h4, .reading h4 {
     display: flex;
@@ -50,11 +29,11 @@ a {
 }
 
 .dancing-description {
-    width: 350px;
+    width: 150%;
 }
 
 .reading-description {
-    width: 300px;
+    width: 150%;
 }
 
 .dancing-description p, .reading-description p {
@@ -64,18 +43,10 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-/* input {
-    opacity: 0;
-    position: absolute;
-    pointer-events: none;
-} */
+
 input:checked + p {
     -webkit-line-clamp: unset;
 }
-
-/* input:focus ~ label {
-    outline: -webkit-focus-ring-color auto 5px;
-} */
 
 .other-interests {
     height: 25%;
@@ -95,4 +66,151 @@ input:checked + p {
 
 .skiing {
     left: 67%;
+}
+
+@media only screen and (min-width: 1300px) {
+    .dancing img, .reading img{
+        width: 200px;
+        height: 240px;
+    }
+
+    .dancing, .reading {
+        width: 200px;
+    }
+
+    .yoga img, .skiing img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .traveling i {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px){
+    .dancing img, .reading img{
+        width: 160px;
+        height: 200px;
+    }
+
+    .dancing, .reading {
+        width: 160px;
+    }
+
+    .yoga img, .skiing img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .traveling i {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px) and (orientation: landscape){
+    .dancing img, .reading img{
+        width: 120px;
+        height: 160px;
+    }
+
+    .dancing, .reading {
+        width: 130px;
+    }
+
+    .yoga img, .skiing img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .traveling i {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width: 1100px) and (orientation:portrait) {
+    .primary-interests {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dancing img, .reading img{
+        width: 200px;
+        height: 240px;
+    }
+
+    .dancing, .reading {
+        width: 200px;
+    }
+
+    .yoga img, .skiing img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .traveling i {
+        font-size: 40px;
+    }
+
+    .other-interests {
+        height: 13%;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width: 700px) and (orientation:portrait) {
+    .primary-interests {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dancing img, .reading img{
+        width: 160px;
+        height: 200px;
+    }
+
+    .dancing, .reading {
+        width: 160px;
+    }
+
+    .yoga img, .skiing img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .traveling i {
+        font-size: 30px;
+    }
+
+    .other-interests {
+        height: 12%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .primary-interests {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dancing img, .reading img{
+        width: 140px;
+        height: 180px;
+    }
+
+    .dancing, .reading {
+        width: 120px;
+    }
+
+    .yoga img, .skiing img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .traveling i {
+        font-size: 30px;
+    }
+
+    .other-interests {
+        height: 12%;
+    }
 }
