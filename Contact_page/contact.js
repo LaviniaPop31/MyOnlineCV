@@ -12,6 +12,7 @@ button.addEventListener('click', () => {
     } else {
         sendEmail()
         displayMessage.innerHTML = 'Your message has been sent!';
+        displayMessage.style.color = '#539DDB'
         document.querySelector('form').reset();
     }
 })
