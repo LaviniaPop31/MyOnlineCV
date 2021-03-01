@@ -3,8 +3,17 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/* important   for body to have the size of the screen */
+html {
+    height: 100%; 
+}
+
 body {
-    background-color: rgb(236, 242, 245);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(236, 242, 245); */
+    background-color: rgb(177, 182, 185);
     height: 100%;
     width: 100%;
 }
@@ -30,6 +39,11 @@ header {
     cursor: pointer;
 }
 
+.header-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
 .header-buttons div {
     margin: 4%;
 }
@@ -38,11 +52,12 @@ header {
 /* Footer */
 footer {
     position: absolute;
-    bottom: 5%;
+    bottom: 0%;
+    height: 10px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    left: 0;
-    right:0;
+    align-items: flex-end;
 }
 
 .footer-icons div {
@@ -51,5 +66,5 @@ footer {
 }
 
 .footer-icons div a {
-    color: black;
+    color: rgb(8,74,131);
 }
