@@ -1,10 +1,11 @@
 .interests-content {
-    height: 100%;
+    height: 90%;
     width: 70%;
     left:0;
     right: 0;
     margin: 2% auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    background-color:rgb(197,198,200);
 }
 
 
@@ -21,6 +22,8 @@
 .primary-interests {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 5%;
+
 }
 
 .dancing h4, .reading h4 {
@@ -53,6 +56,7 @@ input:checked + p {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
+    margin-bottom: 10%;
     
 }
 
@@ -108,7 +112,7 @@ input:checked + p {
     }
 }
 
-@media only screen and (min-width: 700px) and (max-width: 900px) and (orientation: landscape){
+@media only screen and (min-width: 500px) and (max-width: 900px) and (orientation: landscape){
     .dancing img, .reading img{
         width: 120px;
         height: 160px;
@@ -132,6 +136,7 @@ input:checked + p {
     .primary-interests {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15%;
     }
 
     .dancing img, .reading img{
@@ -154,6 +159,7 @@ input:checked + p {
 
     .other-interests {
         height: 13%;
+        margin-bottom: 18%;
     }
 }
 
@@ -161,6 +167,7 @@ input:checked + p {
     .primary-interests {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15%;
     }
 
     .dancing img, .reading img{
@@ -183,6 +190,7 @@ input:checked + p {
 
     .other-interests {
         height: 12%;
+        margin-bottom: 18%;
     }
 }
 
@@ -190,6 +198,7 @@ input:checked + p {
     .primary-interests {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15%;
     }
 
     .dancing img, .reading img{
@@ -212,5 +221,6 @@ input:checked + p {
 
     .other-interests {
         height: 12%;
+        margin-bottom: 18%;
     }
 }
