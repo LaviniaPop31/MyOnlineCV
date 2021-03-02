@@ -1,3 +1,7 @@
+body {
+    height: 100%;
+}
+
 .about-me h4, .about-me p:nth-child(2) {
     display: inline;
 }

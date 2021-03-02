@@ -13,6 +13,10 @@
     left: 0px;
 }
 
+body {
+    height: 100%;
+}
+
 #homeBody{
     background-color: grey;
 }

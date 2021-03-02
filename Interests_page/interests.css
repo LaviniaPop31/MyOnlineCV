@@ -8,7 +8,6 @@
     background-color:rgb(197,198,200);
 }
 
-
 .yoga h5, .skiing h5 {
     position: relative;
     vertical-align: bottom;
@@ -23,7 +22,6 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 5%;
-
 }
 
 .dancing h4, .reading h4 {
