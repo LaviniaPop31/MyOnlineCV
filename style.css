@@ -13,14 +13,16 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: rgb(236, 242, 245); */
-    background-color: rgb(177, 182, 185);
-    height: 100%;
+    /* background-color: rgb(177, 182, 185); */
+    background-color: rgb(31,30,36);
+    
     width: 100%;
 }
 
 /* Header */
 header {
-    background-color: rgb(109, 116, 121);
+    /* background-color: rgb(109, 116, 121); */
+    background-color: rgb(147,142,148);
     height: 50px;
 }
 
@@ -48,21 +50,28 @@ header {
     margin: 4%;
 }
 
+/* Header for Phone/Ipad */
+.dropdown {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    font-size: 30px;
+}
 
 /* Footer */
 footer {
     position: absolute;
     bottom: 0%;
-    height: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+
 .footer-icons div {
     font-size: 20px;
-    margin: 0.5%;
+    margin: 2%;
 }
 
 .footer-icons div a {

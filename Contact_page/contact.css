@@ -1,4 +1,6 @@
-
+body {
+    height: 100%;
+}
 /* Section contact */
 .contact-content {
     margin: 3% auto;
