@@ -1,28 +1,18 @@
-/* body {
-    height: 100%;
-} */
+
 /* Section resume */
 #resumeContent {
     height: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 10%;
 }
 
 /* Myself information */
 .myself-information {
-    /* position: absolute; */
-    
-    /* z-index: 6; */
     background-color: rgb(8,74,131);
-    /* top:20%; */
-    left:10%;
-    top:20%;
     border-right: 2px solid black;
     color: white;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    /* margin-bottom: 10%;
-    margin-top: 3%; */
+    margin-top: 3%;
 }
 
 .myself-information h2{
@@ -30,36 +20,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-bottom: 40%;
-    padding-top: 40%; */
 }
 
 .myself-information p:nth-child(3), .myself-information p:last-child {
     padding-left: 3%;
 }
-/* .myself-information p:last-child {
-    padding-bottom: 40%;
-}
 
-.myself-information hr {
-    margin-bottom: 16%;
-} */
 
 /* Resume information */
 .resume-information {
-    /* position: relative; */
-    /* top: 10%;
-    right: 10%;
-    height: 65%; */
-    top: 20%;
-    /* right: 10%; */
-    left: 25%;
-    width: 65%;
     background-color: grey;
     /* background-color:  rgb(53,56,63); */
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    /* margin-top: 2%; */
-    /* z-index: 5; */
+    margin-top: 3%;
 }
 
 .accordion-button {
@@ -69,11 +42,6 @@
 
 
 .card-body {
-    /* position: absolute;
-    width: 60%; */
-    /* height: 87%; */
-    left: 0%;
-    /* top: 13%; */
     background-color: rgb(53,56,63);
     color: white;
 }
@@ -339,11 +307,11 @@
     #resumeContent {
         display: block;
     }
-
+    
     .resume-information {
         width: 100%;
     }
-    
+
     .card-body  {
         font-size: 0.8rem;
     }
@@ -354,7 +322,7 @@
 
     .pharmacy-history {
         padding-right: 0%;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .education-info {
@@ -366,27 +334,106 @@
         font-size: 1rem;
     }
 
+    #resumeContent {
+        margin-bottom: 20%;
+    }
 }
 
-@media only screen and (min-width:700px) and (orientation:landscape) {
+@media only screen and (min-width:700px) and (max-width: 1100px) and (orientation:portrait) {
+    body {
+        height: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width:850px) and  (orientation:landscape) {
+    .card-body {
+        position: absolute;
+        width: 100%;
+        left: 0%;
+    }
+
+    .myself-information p:last-child {
+        padding-bottom: 100%;
+    }
+
+    .myself-information {
+        margin-left: 7%;
+    }
+
     .resume-information {
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     .resume-information .resume-item {
         flex-direction: row;
         margin: 2px;
     }
-   
+
+    .myself-information hr {
+        margin-bottom: 16%;
+    }
+
+    #resumeContent {
+        margin-bottom: 10%;
+    }
+    
+}
+
+@media only screen and (min-width: 1170px) and (max-width: 1300px) {
+    .myself-information {
+        margin-left: 4%;
+    }
+
+    .card-body  {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1170px) and (orientation:landscape) {
+    .myself-information {
+        margin-left: 2%;
+    }
+
+    .card-body  {
+        top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) and (orientation:landscape){
+    .myself-information {
+        margin-left: 0%;
+    }
+
+    .card-body  {
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 1000px) and (orientation:landscape){
+    .myself-information {
+        margin-left: 0%;
+    }
+
+    .myself-information p:last-child {
+        padding-bottom: 150%;
+    }
+
+    .card-body  {
+        top: 20%;
+    }
+
 }
 
 @media only screen and (min-width:600px) and (max-width:900px) and (orientation:landscape) {
     .card-body  {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .card-body span {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .pharmacy-history {
@@ -401,5 +448,13 @@
 
     .languages-bar h3 {
         font-size: 1rem;
+    }
+
+    .resume-information {
+        width: 100%;
+    }
+
+    body {
+        height: 100%;
     }
 }
