@@ -20,7 +20,7 @@
     <title>MyOnlineCV</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Header -->
     <header>
         <div class="header-logo">
@@ -50,10 +50,10 @@
                     <div id="firstProjectTitle" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#allProjects">
                         <div class="accordion-body">
-                            <p>This is my favourite project. I'm glad that I chose this subject, it is a complex one and I 
+                            <p>This is actually my favourite project. I'm glad that I chose this subject, it is a complex one and I 
                                 learned a lot. I didn't have time to finish it like I wanted but I'm working on it.
                             </p>
-                            <div>
+                            <div id="unoLinks">
                                 <a href="https://github.com/LaviniaPop31/UnoGame"><button>Go to Github repository</button> </a>
                                 <a  href="http://LaviniaPop31.github.io/UnoGame/UNOgame.html"><button id="seeProject1">See project</button></a>
                             </div>
@@ -78,7 +78,7 @@
                             <p>It was a nice experience, I am gland that I had the opportunity to know 
                             better some of my colleagues.</p>
                             <div>
-                                <a href="https://github.com/razvantimis/myIMDB_17.3"><button>Go to Github repository</button> </a>
+                                <a id="imdbLink" href="https://github.com/razvantimis/myIMDB_17.3"><button>Go to Github repository</button> </a>
                                 <button id="seeProject2" data-bs-target="#imdbModal" data-bs-toggle="modal">See project</button>
                                 <!-- My IMDb modal -->
                                 <div class="modal" id="imdbModal" tabindex="-1">
@@ -161,7 +161,7 @@
                                 I implemented obstacles.
                             </p>
                             <div>
-                                <a href="https://github.com/LaviniaPop31/PersonalWork/tree/master/The%20player%20-%20REACT"><button>Go to Github repository</button> </a>
+                                <a id="playerLink" href="https://github.com/LaviniaPop31/PersonalWork/tree/master/The%20player%20-%20REACT"><button>Go to Github repository</button> </a>
                                 <button id="seeProject2" data-bs-target="#thePlayerModal" data-bs-toggle="modal">See project</button>
                                 <!-- The Player modal -->
                                 <div class="modal" id="thePlayerModal" tabindex="-1">
@@ -229,7 +229,7 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="footer-icons">
+    <footer class="mt-auto" id="footerIcons">
         <div id="iconsContainer">
             <div id="linkedinIcon">
                 <a href="https://www.linkedin.com/in/laviniapop/">
