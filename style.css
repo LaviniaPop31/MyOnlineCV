@@ -12,17 +12,19 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(236, 242, 245); */
+    /* background-color: rgb(47,53,56); */
     /* background-color: rgb(177, 182, 185); */
-    background-color: rgb(31,30,36);
-    
+    /* background-color: rgb(31,30,36); */
+    /* background-color: rgb(65,64,66); */
+    /* background-color: rgb(35,31,32); */
+    background-image: linear-gradient( #090d13, #5d676d);
     width: 100%;
 }
 
 /* Header */
 header {
     /* background-color: rgb(109, 116, 121); */
-    background-color: rgb(147,142,148);
+    background-color: rgb(88,89,91);
     height: 50px;
 }
 
@@ -41,9 +43,13 @@ header {
     cursor: pointer;
 }
 
-.header-buttons a {
+.header-buttons a{
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+.header-buttons a:hover {
+    color: rgb(8,74,131);
 }
 
 .header-buttons div {
@@ -60,20 +66,49 @@ header {
 
 /* Footer */
 footer {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    /* margin-top: 10%; */
 }
 
+#iconsContainer {
+    width: 30%;
+    height: 90%;
+    background-color:  rgb(88,89,91);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0.7;
 
-.footer-icons div {
-    font-size: 20px;
-    margin: 2%;
 }
 
-.footer-icons div a {
+#footerIcons div {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#footerIcons div a {
     color: rgb(8,74,131);
+}
+
+@media only screen and (min-width:1000px) {
+    #footerIcons div {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1000px) {
+    #footerIcons div {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    #footerIcons div {
+        font-size: 18px;
+    }
 }

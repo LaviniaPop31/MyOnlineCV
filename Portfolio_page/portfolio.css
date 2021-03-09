@@ -2,26 +2,144 @@ body {
     height: 100%;
 }
 
-.portofolio-content {
+.portfolio-content {
     position: relative;
     width: 70%;
-    height: 60%;
-    border: 2px solid black;
+    height: 80%;
     left:0;
     right: 0;
     margin: 5% auto;
-    background-color: white;
-}
-
-#allProjects {
-    width: 60%;
+    background-color:rgb(241,242,242);
+   
 }
 
 #workingImg {
     position: absolute;
-    width:40%;
-    height: 100%;
-    right: 0%;
-    top: 0%;
     opacity: 0.7;
+    z-index: 0;
+}
+
+#allProjects {
+    z-index: 1;
+}
+
+#sliderContainerImdb {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 5;
+}
+
+button {
+    border: none;
+    background-color:rgb(8,74,131) ;
+    color: white;
+    
+}
+
+.accordion-button {
+    color: rgb(31, 109, 177);
+    font-weight: bold;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23084A83'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body button {
+    box-shadow: 5px 3px 3px rgb(188,190,192);
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+#playerLink {
+    text-decoration: none;
+}
+
+#imdbLink {
+    text-decoration: none;
+}
+
+#unoLinks a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width:1300px) {
+    #allProjects {
+        width: 60%;
+    }
+
+    #workingImg {
+        width:40%;
+        height: 100%;
+        right: 0%;
+        top: 0%;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    #allProjects {
+        width: 100%;
+    }
+
+    .portfolio-content {
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+    }
+
+    #workingImg {
+        top:0%;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width: 1300px) {
+    #allProjects {
+        margin-top: 25%;
+    }
+}
+
+@media only screen and (min-width:950px) and (max-width:1100px) {
+    #allProjects {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:950px) {
+    #allProjects {
+        margin-top: 35%;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:800px) {
+    #allProjects {
+        margin-top: 40%;
+    }
+
+    .portfolio-content {
+        height: 100%;
+    }
+
+    #workingImg {
+        height: 35%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #allProjects {
+        margin-top: 45%;
+    }
+
+    .portfolio-content {
+        height: 100%;
+    }
+
+    #workingImg {
+        height: 30%;
+    }
 }
