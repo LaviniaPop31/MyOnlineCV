@@ -5,14 +5,18 @@
     display: flex;
     flex-direction: row;
 }
-
+/* footer {
+    margin-top: 10%;
+} */
 /* Myself information */
 .myself-information {
     background-color: rgb(8,74,131);
     border-right: 2px solid black;
     color: white;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.2); */
     margin-top: 3%;
+    box-shadow: 5px 5px 10px rgb(128,130,133);
+    border-radius: 2px;
 }
 
 .myself-information h2{
@@ -29,21 +33,28 @@
 
 /* Resume information */
 .resume-information {
-    background-color: grey;
-    /* background-color:  rgb(53,56,63); */
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    background-color: rgb(241,242,242);
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.2); */
+    box-shadow: 5px 5px 10px rgb(147,149,152);
+    border-radius: 2px;
     margin-top: 3%;
 }
 
 .accordion-button {
     background-color: rgb(8,74,131);
     border-color: rgb(8,74,131);
+    color: white;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 
 .card-body {
-    background-color: rgb(53,56,63);
-    color: white;
+    background-color: rgb(241,242,242);
+    color: black;
+    border: none;
 }
 
 .card-body img {
@@ -121,7 +132,7 @@
     position: relative;
     height: 10px;
     width: 100%;
-    background: #f0f0f0;
+    background: rgb(230,231,232);
     border-radius: 10px;
     transform: scaleX(0);
     transform-origin: left;
@@ -334,9 +345,9 @@
         font-size: 1rem;
     }
 
-    #resumeContent {
+    /* #resumeContent {
         margin-bottom: 20%;
-    }
+    } */
 }
 
 @media only screen and (min-width:700px) and (max-width: 1100px) and (orientation:portrait) {
@@ -376,9 +387,9 @@
         margin-bottom: 16%;
     }
 
-    #resumeContent {
+    /* #resumeContent {
         margin-bottom: 10%;
-    }
+    } */
     
 }
 

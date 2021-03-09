@@ -9,7 +9,7 @@ body {
 .about-me {
     border: 2px solid black;
     border-radius: 2%;
-    background-color: rgb(109, 116, 121);
+    background-color: rgb(241,242,242);
 }
 
 #homeContent img {
@@ -20,6 +20,7 @@ body {
 #homeContent {
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 10%;
 }
 
 @media only screen and (min-width: 1200px)  {
