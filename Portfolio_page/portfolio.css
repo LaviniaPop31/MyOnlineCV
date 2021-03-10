@@ -5,12 +5,15 @@ body {
 .portfolio-content {
     position: relative;
     width: 70%;
-    height: 80%;
+    /* height: 80%; */
     left:0;
     right: 0;
-    margin: 5% auto;
+    top:0;
+    bottom: 0;
+    margin:  auto;
     background-color:rgb(241,242,242);
-   
+    box-shadow: 5px 5px 10px rgb(128,130,133);
+    border-radius: 2px;
 }
 
 #workingImg {
@@ -50,7 +53,6 @@ button {
 }
 
 .accordion-body button {
-    box-shadow: 5px 3px 3px rgb(188,190,192);
     border-radius: 5px;
     margin-top: 2%;
 }
@@ -88,7 +90,7 @@ button {
     .portfolio-content {
         display: flex;
         flex-direction: column;
-        height: 85%;
+        /* height: 85%; */
     }
 
     #workingImg {
@@ -121,9 +123,9 @@ button {
         margin-top: 40%;
     }
 
-    .portfolio-content {
+    /* .portfolio-content {
         height: 100%;
-    }
+    } */
 
     #workingImg {
         height: 35%;
@@ -135,9 +137,9 @@ button {
         margin-top: 45%;
     }
 
-    .portfolio-content {
+    /* .portfolio-content {
         height: 100%;
-    }
+    } */
 
     #workingImg {
         height: 30%;
