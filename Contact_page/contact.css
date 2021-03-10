@@ -2,9 +2,6 @@ body {
     height: 100%;
 }
 
-/* footer {
-    margin-top: 5%;
-} */
 /* Section contact */
 .contact-content {
     margin:  auto;
@@ -94,8 +91,8 @@ body {
 @media only screen and (min-width: 500px) and (max-width: 900px) {
     .contact-content {
         width: 60%;
-        /* margin-top: 10%; */
     }
+
     .contact-content input {
         padding: 15px 0;
         margin-bottom: 32px;
@@ -115,7 +112,6 @@ body {
 @media only screen and (max-width: 500px) {
     .contact-content {
         width: 90%;
-        /* margin-top: 15%; */
     }
 
     .contact-content input {
@@ -137,7 +133,6 @@ body {
 @media only screen and (min-width: 900px) and (max-width: 1150px) and (orientation: portrait) {
     .contact-content {
         width: 60%;
-        /* margin-top: 30%; */
     }
 
     .contact-content input {

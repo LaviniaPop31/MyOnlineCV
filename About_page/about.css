@@ -23,6 +23,11 @@ body {
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: 10%;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 @media only screen and (min-width: 1200px)  {

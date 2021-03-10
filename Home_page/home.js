@@ -10,8 +10,6 @@ function transitionEffect() {
 
         button.addEventListener('click', (e) => {
             e.preventDefault();
-            // let target = e.target.href
-            // console.log(target)
             transitionElement.classList.add('is-active');
 
             setTimeout(() => {
@@ -22,10 +20,3 @@ function transitionEffect() {
 
     }
 }
-
-// window.addEventListener('load', () => {
-//    let html = document.getElementsByTagName('html')
-//    let htmlHeight = window.innerHeight
-//    console.log(htmlHeight)
-//    html.style.height = htmlHeight
-// })
