@@ -43,6 +43,11 @@ header {
     color: rgb(8,74,131);
 }
 
+.active a {
+    color:rgb(8,74,131) ;
+    text-decoration: rgb(8,74,131) underline;
+}
+
 .header-buttons div {
     margin: 4%;
 }
