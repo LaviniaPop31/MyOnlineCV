@@ -1,11 +1,18 @@
+
 .interests-content {
-    height: 90%;
+    height: 100%;
     width: 70%;
     left:0;
     right: 0;
-    margin: 2% auto;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* margin: 2% auto; */
     /* border: 2px solid black; */
     background-color:rgb(241,242,242);
+    box-shadow: 5px 5px 10px rgb(128,130,133);
+    border-radius: 2px;
+    
 }
 
 .yoga h5, .skiing h5 {
@@ -27,7 +34,13 @@
 .dancing h4, .reading h4 {
     display: flex;
     justify-content: center;
-    color: rgb(8,74,131);
+    color: rgb(31, 109, 177);
+}
+
+.dancing img, .reading img{
+    margin-top: 2%;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px #BCBEC0;
 }
 
 .dancing-description {
@@ -44,6 +57,10 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.dancing-description label, .reading-description label {
+    color: rgb(84,156,217);
 }
 
 input:checked + p {

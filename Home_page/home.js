@@ -23,4 +23,9 @@ function transitionEffect() {
     }
 }
 
-
+// window.addEventListener('load', () => {
+//    let html = document.getElementsByTagName('html')
+//    let htmlHeight = window.innerHeight
+//    console.log(htmlHeight)
+//    html.style.height = htmlHeight
+// })

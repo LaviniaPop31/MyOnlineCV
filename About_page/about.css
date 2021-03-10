@@ -7,14 +7,16 @@ body {
 }
  
 .about-me {
-    border: 2px solid black;
     border-radius: 2%;
     background-color: rgb(241,242,242);
+    box-shadow: 5px 5px 10px rgb(128,130,133);
+    border-radius: 2px;
 }
 
 #homeContent img {
     border-radius: 50%;
     margin-right: 15%;
+    box-shadow: 5px 5px 10px rgb(128,130,133);
 }
 
 #homeContent {
