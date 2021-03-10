@@ -21,9 +21,9 @@ function setNewButtonType() {
     <div class="dropdown">
         <i class="fa fa-bars" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ></i>
      
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="../Home_page/home.html">Home</a></li>
-            <li><a class="dropdown-item" href="../About_page/about.html">About</a></li>
+        <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" value="Home" href="../Home_page/home.html">Home</a></li>
+            <li><a class="dropdown-item" value="About" href="../About_page/about.html">About</a></li>
             <li><a class="dropdown-item" href="../Resume_page/resume.html">Resume</a></li>
             <li><a class="dropdown-item" href="../Portfolio_page/portfolio.html">Portfolio</a></li>
             <li><a class="dropdown-item" href="../Interests_page/interests.html">Interests</a></li>

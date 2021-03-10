@@ -5,7 +5,6 @@ body {
 .portfolio-content {
     position: relative;
     width: 70%;
-    /* height: 80%; */
     left:0;
     right: 0;
     top:0;
@@ -40,7 +39,6 @@ button {
     border: none;
     background-color:rgb(8,74,131) ;
     color: white;
-    
 }
 
 .accordion-button {
@@ -90,7 +88,6 @@ button {
     .portfolio-content {
         display: flex;
         flex-direction: column;
-        /* height: 85%; */
     }
 
     #workingImg {
@@ -123,9 +120,9 @@ button {
         margin-top: 40%;
     }
 
-    /* .portfolio-content {
-        height: 100%;
-    } */
+    .portfolio-content {
+        width: 100%;
+    }
 
     #workingImg {
         height: 35%;
@@ -137,9 +134,9 @@ button {
         margin-top: 45%;
     }
 
-    /* .portfolio-content {
-        height: 100%;
-    } */
+    .portfolio-content {
+        width: 100%;
+    }
 
     #workingImg {
         height: 30%;
