@@ -67,6 +67,10 @@ button {
     text-decoration: none;
 }
 
+.modal-backdrop {
+    z-index: -1;
+}
+
 @media only screen and (min-width:1300px) {
     #allProjects {
         width: 60%;
